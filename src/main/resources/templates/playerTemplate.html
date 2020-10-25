@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${playerModel.name}">A player</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${playerModel.name}">A Player</h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/players">Players</a></p>
+        <li th:text="${playerModel.name}"></li>
+    </ul>
+    <h2 th:text="${playerModel.position}"></h2>
+</main>
+
+<footer>
+    <small>&copy wcci 2020</small>
+</footer>
+
+</body>
+</html>

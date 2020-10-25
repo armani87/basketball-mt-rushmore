@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Basketball Mt. Rushmore</title>
+</head>
+<body>
+
+<header>
+    <h1>My top four players</h1>
+    <p>Now we all know that these are arguably the best players of all time, but let us take a deeper look</p>
+</header>
+
+<main>
+    <ul>
+        <li th:each="player: ${playersModel}"><a th:href="@{/player(id=${player.id})}" th:text="${player.name}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>&copy wcci 2020</small>
+</footer>
+
+</body>
+</html>
