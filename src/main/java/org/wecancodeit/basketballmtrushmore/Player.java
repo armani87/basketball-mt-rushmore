@@ -16,7 +16,7 @@ public class Player {
 
     public  String getRings(){ return rings;}
 
-    public Player(long l, String name, String position, String rings){
+    public Player(long id, String name, String position, String rings){
         this.id=id;
         this.name=name;
         this.position=position;
